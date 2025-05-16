@@ -1,0 +1,3 @@
+- [ ] trouver une api qui traduit
+- [ ] coder video -> api
+- [ ] afficher la version sous titrée
