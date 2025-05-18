@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal YouTube Translator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-6 shadow-lg">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold text-center">Universal YouTube Translator</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Translator Section -->
+        <section class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6 mb-8">
+            <div class="space-y-4">
+                <div>
+                    <label for="youtube-url" class="block text-sm font-medium text-gray-700 mb-1">Lien YouTube</label>
+                    <input type="text" id="youtube-url" 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                           placeholder="https://www.youtube.com/watch?v=...">
+                </div>
+                
+                <div>
+                    <label for="target-language" class="block text-sm font-medium text-gray-700 mb-1">Langue cible</label>
+                    <select id="target-language" 
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                        <option value="fr">Français</option>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="de">Deutsch</option>
+                        <option value="it">Italiano</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+
+                <button id="translate-btn" 
+                        class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
+                    Traduire
+                </button>
+
+                <div id="result-container" class="hidden">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Traduction</label>
+                    <textarea id="translation-result" 
+                              class="w-full px-4 py-2 border border-gray-300 rounded-md h-48 focus:ring-blue-500 focus:border-blue-500"
+                              readonly></textarea>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">À propos de nous</h2>
+            <p class="text-gray-600 mb-4">
+                Nous sommes quatre étudiants en école d'ingénieur, trois de l'UTBM et un de l'UTC, actuellement en semestre à l'UTSEUS Shanghai.
+                Dans le cadre de l'UV ML01 (Machine Learning), nous avons développé Universal YouTube Translator : une application web qui permet d'obtenir le script traduit par IA dans la langue de votre choix à partir de n'importe quelle vidéo YouTube.
+            </p>
+            <p class="text-gray-600">
+                Notre objectif : rendre les contenus YouTube accessibles à tous, quelle que soit la langue.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Contact</h2>
+            <p class="text-gray-600 mb-4">
+                Vous avez des questions ou des suggestions ? N'hésitez pas à nous contacter !
+            </p>
+            <div class="space-y-2">
+                <a href="mailto:camil.maillard@utbm.fr" 
+                   class="block text-blue-600 hover:text-blue-800 transition duration-300">
+                    camil.maillard@utbm.fr
+                </a>
+                <a href="mailto:gabin.lambert@utbm.fr" 
+                   class="block text-blue-600 hover:text-blue-800 transition duration-300">
+                    gabin.lambert@utbm.fr
+                </a>
+                <a href="mailto:theo.pereira@utc.fr" 
+                   class="block text-blue-600 hover:text-blue-800 transition duration-300">
+                    theo.pereira@utc.fr
+                </a>
+                <a href="mailto:noa.fouich@utbm.fr" 
+                   class="block text-blue-600 hover:text-blue-800 transition duration-300">
+                    noa.fouich@utbm.fr
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 mt-12 py-6">
+        <div class="container mx-auto px-4 text-center text-gray-600">
+            <p>&copy; 2025 Universal YouTube Translator - UTSEUS Shanghai</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
