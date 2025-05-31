@@ -1,0 +1,7 @@
+streamlit==1.31.1
+openai-whisper==20231117
+yt-dlp==2023.12.30
+deep-translator==1.11.4
+streamlit-player==0.1.5
+ffmpeg-python==0.2.0
+moviepy==1.0.3 
